@@ -1,0 +1,75 @@
+
+.language-toggle {
+  position: absolute;
+  top: -1px;
+  left: 111px;
+  background: #a05f83;
+  padding: 0 5px;
+}
+
+.desctop-footer .language_tab {
+  display: none;
+  cursor: pointer;
+}
+.desctop-footer .language_tab:first-child {
+  margin-top: 26px;
+}
+.desctop-footer .language_tab.language_tab_active .language-toggle__btn {
+  color: rgba(255, 255, 255, 1);
+  padding-right: 4px;
+}
+.desctop-footer .language_tab:hover .language-toggle__btn {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+.desctop-footer .language_tab.language_tab_active:hover .language-toggle__btn {
+  color: rgba(255, 255, 255, 1);
+}
+.desctop-footer .language_tab svg{
+  fill: #fff;
+  position: absolute;
+  top: 10px;
+  left: 100%;
+}
+
+.desctop-footer .language-toggle .language_tab.language_tab_active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.language-toggle__btn {
+  border: 0;
+  background: 0 0;
+  padding: 0;
+  cursor: pointer
+}
+
+.language-toggle__btn:hover {
+  color: #fff
+}
+
+.language-toggle__splitter {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center
+}
+.language-toggle__splitter:last-of-type {
+  display: none;
+}
+@media (max-width:767.98px) {
+  .language-toggle__splitter:last-of-type {
+    display: inline-block;
+  }
+}
+.language-toggle__btn,
+.language-toggle__splitter {
+  color: rgba(255, 255, 255, .5);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -.2px
+}
