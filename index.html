@@ -105,7 +105,7 @@
         <nav>
             <ul id="menu-header_new_mobile" class=""><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/prices/" class="menu__link-mobile">Цены</a></li><li class="features-link-mobile menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children item-containing"><a href="https://www.unisender.com/ru/?page_id=2728" class="menu__link-mobile">Возможности</a><ul><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/email-base/">Сбор базы</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/create-email/">Создание письма</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/email-automation/">Автоматизация</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/better-results/">Улучшение результатов</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/channels/">Подключить новые каналы продаж</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/?page_id=2228">Транзакционные рассылки с UniOne</a></li></ul></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/services/" class="menu__link-mobile">Услуги</a></li><li class="useful-link-mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children item-containing"><a href="https://www.unisender.com/#" class="menu__link-mobile">Полезное</a><ul><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/support/">База знаний</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.unisender.com/ru/unischool/">Школа</a></li><li class=" menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.unisender.com/ru/support/category/about/glossary/">Словарь</a></li></ul></li><li class=" menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.unisender.com/ru/blog/" class="menu__link-mobile">Блог</a></li></ul>            <ul>
                 <li>
-                                            <a href="https://cp.unisender.com/ru/v5/registration/step/1?target=tryFree" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;,  &#39;new_landing&#39;,  &#39;registration_header&#39;);">Зарегистрироваться</a>
+                                            <a href="#subscribe">Зарегистрироваться</a>
                                     </li>
                 <li class="login">
                                             <a href="https://cp.unisender.com/ru/v5/login" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;,  &#39;new_landing&#39;,  &#39;login_header&#39;);">Войти</a>
@@ -127,7 +127,7 @@
                         <div class="wrap-composition">
                             <p class="h1">Бесплатные лендинги от UniSender</p>
                             <h1 class="h2">От идеи до готового сайта — всего 10 минут!</h1>
-                            <a href="https://cp.unisender.com/ru/v5/registration/step/1" class="button button-purple">Вперёд и с песней!</a>
+                            <a href="#subscribe" class="button button-purple">Вперёд и с песней!</a>
 <!--                            <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank" class="button button-purple">Несбыточная мечта</a>-->
                         </div>
                     </div>
@@ -478,16 +478,21 @@
 
         
 <!--  тут я сделал bg-color, но шрифты остались от старого класса. так что надо или класс поменять, или инлайн шрифты поделать тоже-->
-        <section class="subscription" style="background-color:#a05f83">
+        <section id="subscribe" class="subscription" style="background-color:#a05f83">
             <div class="container">
                 <div class="wrap-composition">
                     <h2 class="h2" style="color: white">Приступим к делу</h2>
-                    <p style="color: white">Создавайте простой сайт и начинайте продавать товары и услуги уже сегодня!</p>
-                    <form method="POST" action="https://www.unisender.com/subscribeNovice" id="home_form_subscribe1" class="form_subscription">
+                    <p style="color: white">Создайте простой сайт и начните продавать товары и услуги уже сегодня!</p>
+                    
+                    <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6bdhrhi5bixrhppd1cgr4dyjp173djsjfxr4i3jo4jbga5yjknqpo" name="subscribtion_form" class="form_subscription">
                         <div class="success"><span>Проверьте почтовый ящик</span></div>
                         <input type="email" name="email" placeholder="Ваш email">
+                        <input type="hidden" name="charset" value="UTF-8">
+                        <input type="hidden" name="default_list_id" value="20799430">
+                        <input type="hidden" name="overwrite" value="2">
+                        <input type="hidden" name="is_v5" value="1">
                         <button type="submit" class="button button-purple" style="background-color: white; color: #a05f83">Зарегистрироваться</button>
-                    </form>
+                    </form>   
                 </div>
             </div>
         </section>
