@@ -29,7 +29,20 @@ var bee;
 // Define a simple BEE Plugin configuration...
 var config = {
     uid: 'igor',
-    container: 'bee-plugin-container'
+    container: 'bee-plugin-container',
+    defaultForm: {
+  structure: {
+    title: 'Form title',
+    fields: {
+      email: {type: 'email', label: 'Email'},
+      drug_type: {type: 'text', label: 'drug_type'},
+      buy: {type: 'submit', label: ' ', attributes: {value: 'buy'}},
+    },
+    layout: [
+      ['email', 'drug_type', 'buy']
+    ]
+  }
+},
 }
 
 // Call the "create" method:
