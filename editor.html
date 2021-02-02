@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://app-rsrc.getbee.io/plugin/BeePlugin.js" type="text/javascript"></script>
+        
+    </head>
+<body>
+    <div id="bee-plugin-container" style="height: 100vh"></div>
+    
+    
+    <script>
+        var endpoint = "https://auth.getbee.io/apiauth";
+ 
+var payload = {
+  client_id: "409ce529-99b6-4662-be29-cb656ca7495b", // Enter your client id
+  client_secret: "aK94ZS5bzGATCyKSjFl17xgeHNGaMi6nCkh6BB5D6hKpeZzVOfbk", // Enter your secret key
+  grant_type: "password" // Do not change
+};
+ 
+$.post(endpoint, payload)
+  .done(function(data) {
+    var token = data;
+    
+            // Define a global variable to reference the BEE Plugin instance.
+// Tip: Later, you can call API methods on this instance, e.g. bee.load(template)
+var bee;
+ 
+// Define a simple BEE Plugin configuration...
+var config = {
+    uid: 'igor',
+    container: 'bee-plugin-container'
+}
+
+// Call the "create" method:
+// Tip:  window.BeePlugin is created automatically by the library...
+window.BeePlugin.create(token, config, function(instance) {
+    bee = instance;
+    // You may now use this instance...
+    
+    var template = {}; // Any valid template, as JSON object
+ 
+bee.start(template);
+});
+  });
+        </script>
+    
+    </body>
+</html>
