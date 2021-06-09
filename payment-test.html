@@ -228,53 +228,15 @@ checkout.render('payment-form')
             <div class="container">
                 <h2 class="h2">Как это вообще работает?</h2>
                 <div class="threeSteps_items">
-                        <div class="threeSteps_item">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-5">
-                                        <div class="step_info">
-                                            <div class="count">1<span>.</span></div>
-                                            <h3 class="h3">Выбираете шаблон для лендинга</h3>
-                                            <p>Например, для продажи курса, товара или записи на услуги. Добавляете свой текст и картинки. Готово! 
-<br>
-Наши шаблоны адаптивные. Это значит, что на телефоне и ноутбуке они смотрятся одинаково красиво.
-</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <img src="dogs/landing_4.svg">
-                                </div>
-                            </div>
-                        </div>
-                            <div class="threeSteps_item">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-5">
-                                        <div class="step_info">
-                                            <div class="count">2<span>.</span></div>
-                                            <h3 class="h3">Если нужно, подключаете аналитику и форму для платежей</h3>
-                                            <p>По специальной ссылке, без сложных настроек и знания кода.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <img src="dogs/landing_5.svg">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="threeSteps_item">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-5">
-                                        <div class="step_info">
-                                            <div class="count">3<span>.</span></div>
-                                            <h3 class="h3">Не платите за домен</h3>
-                                            <p>Мы сделали для лендингов свой ‒ unisender.com. <br>
-Он бесплатный и его не нужно настраивать. 
-</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7"> 
-                                        <img src="dogs/landing_3.svg">
-                                    </div>
-                                 </div>             
-                            </div>
+                     <script src="https://geoadv-partner.yandex.ru/static/partner-script.js"></script>
+                    <script>
+                    window.YaPartnerWidget.init({
+                        container: document.querySelector('#my-container'),
+                        partnerName: 'unisender',
+                        partnerSiteld: 777,
+                        products: ['websubscription', 'subscription']
+                    });
+                    </script>
                 </div>
             </div>
         </section>

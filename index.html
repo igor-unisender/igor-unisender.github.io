@@ -106,7 +106,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="header-btns">
                 <ul>
                     <li class="login">
-                                                    <a href="https://land.unisender.com/">Создать лендинг бесплатно</a>
+                        <a href="https://land.unisender.com/" 
+                           onclick="dataLayer.push({
+                                'event': 'addEvents_makeConversions',
+                                'event_id': 'd-v1-e12',
+                                'event_cat': 'page',
+                                'event_name': 'try'
+                            });">
+                            Создать лендинг бесплатно
+                        </a>
                                             </li>
                 </ul>
             </div>
@@ -719,6 +727,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>    
 
 
+<!-- double tangerine onload amplitude script -->    
+<script>
+    dataLayer.push({
+        'event': 'addEvents_makeConversions',
+        'event_id': 'd-v1-e11',
+        'event_cat': 'page',
+        'event_name': 'touch'
+    });
+</script>
+    
 
 <!-- локальные js -->
 <script src="./uni.com_files/headroom.min.js"></script>
