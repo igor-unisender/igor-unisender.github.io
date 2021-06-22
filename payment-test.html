@@ -253,15 +253,15 @@ checkout.render('payment-form')
             <div class="container">
                 <h2 class="h2">Как это вообще работает?</h2>
                 <div class="threeSteps_items">
-                     <script src="https://geoadv-partner.yandex.ru/static/partner-script.js"></script>
-                    <script>
-                    window.YaPartnerWidget.init({
-                        container: document.querySelector('#my-container'),
-                        partnerName: 'unisender',
-                        partnerSiteld: 777,
-                        products: ['websubscription', 'subscription']
-                    });
-                    </script>
+<script src="https://geoadv-partner.yandex.ru/static/partner-script.js"></script>
+<script>
+window.YaPartnerWidget.init({
+	container: document.querySelector('#container'),
+	partnerName: 'test',
+	partnerSiteId: 185728, //подставьте любой уникальный ID 
+	products: ['websubscription', 'subscription']
+});
+</script>
                 </div>
             </div>
         </section>
