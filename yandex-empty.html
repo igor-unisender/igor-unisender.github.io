@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="https://geoadv-partner.yandex.ru/static/partner-script.js"></script>
     </head>
 <body>
-    <div>
-
-    <script>
-    window.YaPartnerWidget.init({
-        container: document.querySelector('#container'),
-        partnerName: 'unisender',
-        partnerSiteId: 185728, //подставьте любой уникальный ID 
-        products: ['websubscription', 'subscription']
-    });
-    </script>
-    </div>
+    <main class="content-wrapper">
+        <section class="head" style="padding-top: 180px">
+            <div id="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h2 class="h2">Вот тут должен быть виджет Яндекса</h2>
+                        <script src="https://geoadv-partner.yandex.ru/static/partner-script.js"></script>
+                        <script>
+                        window.YaPartnerWidget.init({
+                            container: document.querySelector('#container'),
+                            partnerName: ‘unisender’,
+                            partnerSiteId: 185728, //подставьте любой уникальный ID 
+                            products: ['websubscription', 'subscription']
+                        });
+                        </script>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     </body>
 </html>
