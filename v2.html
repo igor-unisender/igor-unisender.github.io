@@ -198,13 +198,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             
                             <a href="#how" 
                                class="button button-purple" 
-                               style="border: 0px;  background-color: transparent; color: #a05f83;" 
+                               style="border: 0px;  background-color: transparent; color: #a05f83; font-weight: 400;" 
                                onmouseover="this.style.backgroundColor='#e3cfda';"
                                onmouseout="this.style.backgroundColor='transparent';">Узнать подробнее</a>
                         </div>
                     </div>
                     <div class="col-xl-5 order-1 order-xl-2">
-                        <img src="img/dog-ancap.png" class="img-fluid" style="max-width: 100%">
+                        <img src="img/dog-money-1.png" class="img-fluid" style="max-width: 100%">
                     </div>
                 </div>
             </div>
@@ -227,7 +227,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </div>
                                     </div>
                                     <div class="col-lg-7">
-                                        <img src="dogs/landing_4.svg">
+                                        <div class="wrap-animation">
+                                            <video autoplay="" muted="" loop="" playsinline="">
+                                                <source src="https://www.unisender.com/wp-content/themes/UniSender/templates/home-2/video/step-2.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+<!--                                        <img src="dogs/landing_4.svg">-->
                                 </div>
                             </div>
                         </div>
@@ -269,7 +274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section id="features" class="boostEffect">
             <div class="container">
-                <h2 class="h2">Здорово! Что ещё можно сделать?</h2>
+                <h2 class="h2">Почему UniSender Business?</h2>
                 <div class="row">
                             <div class="col-md-6">
                                 <div class="boostEffect_item">
@@ -277,8 +282,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <img src="./uni.com_files/boost-effect-1.svg" alt="А/B-тесты">
                                     </div>
                                     <div class="wrap-text">
-                                        <h3 class="h3">Создайте форму подписки</h3>
-                                        <p>Чтобы собирать базу для рассылок прямо на лендинге</p>
+                                        <h3 class="h3">Шаблоны на любой вкус</h3>
+                                        <p>Красивые и эффективные. Подойдут для любого бизнеса и размера компании</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="boostEffect_item">
+                                    <div class="wrap-img">
+                                        <img src="./uni.com_files/boost-effect-4.svg" alt="Персонализация">
+                                    </div>
+                                    <div class="wrap-text">
+                                        <h3 class="h3">Управление заказами в CRM</h3>
+                                        <p>Отправить письмо? Выполнить доставку? Связаться для получения деталей? Всё это и больше, в один клик</p>
                                     </div>
                                 </div>
                             </div>
@@ -288,8 +304,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <img src="./uni.com_files/boost-effect-2.svg" alt="Всплывающие формы">
                                     </div>
                                     <div class="wrap-text">
-                                        <h3 class="h3">Настройте SEO</h3>
-                                        <p>Чтобы твой сайт быстрее находился в поисковиках</p>
+                                        <h3 class="h3">Интеграция с UniSender</h3>
+                                        <p>Превращайте разовых клиентов в постоянных благодаря Email/SMS/Viber-рассылкам</p>
                                     </div>
                                 </div>
                             </div>
@@ -299,19 +315,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <img src="./uni.com_files/boost-effect-3.svg" alt="Сегментация">
                                     </div>
                                     <div class="wrap-text">
-                                        <h3 class="h3">Запустите имейл-рассылки </h3>
-                                        <p>Чтобы рассказывать подписчикам о скидках на свои товары или услуги</p>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="col-md-6">
-                                <div class="boostEffect_item">
-                                    <div class="wrap-img">
-                                        <img src="./uni.com_files/boost-effect-4.svg" alt="Персонализация">
-                                    </div>
-                                    <div class="wrap-text">
-                                        <h3 class="h3">Превращайте письма в посты для соцсетей</h3>
-                                        <p>Чтобы привлечь больше покупателей</p>
+                                        <h3 class="h3">Постоянное улучшение</h3>
+                                        <p>Мы добавляем новые инструменты каждую неделю. Если нет чего-то нужного вам — напишите и мы это сделаем</p>
                                     </div>
                                 </div>
                             </div>
@@ -363,9 +368,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="currency">$</span><span class="price">0</span>
                             <span class="pricing-card-month">в месяц</span>
                         </div>
-                        <a href="https://cp.unisender.com/ru/v5/user/account/tariff" class="button button-pricing-card">Начать работу</a>
+                        <a href="https://land.unisender.com/" 
+                           target="_blank" 
+                           class="button button-pricing-card" 
+                           onclick="dataLayer.push({
+                                'event': 'addEvents_makeConversions',
+                                'event_id': 'd-v1-e12',
+                                'event_cat': 'page',
+                                'event_name': 'try'
+                            });">Начать работу</a>
                     </div>
 
+<!--
                     <div class="pricing-card pricing-premium col-4 col-md-4 col-lg-4 col-xl-4">
                         <h3>Премиум</h3>
                         <p class="pricing-card-subtitle">Всё, что в Бесплатном</p>
@@ -386,6 +400,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <a href="#" class="button button-pricing-card" data-toggle="modal" data-target="#requestModal1">Связаться с нами</a>
                     </div>
+-->
+                    
                 </div>
             </div>
         </section>
@@ -407,7 +423,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 'event_id': 'd-v1-e12',
                                 'event_cat': 'page',
                                 'event_name': 'try'
-                            });">Так тому и быть</a>
+                            });">Регистрация</a>
                     </div>
 <!-- rest in pepperoni forma -->
                     
@@ -931,23 +947,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
 
-                <div class="footer_copyright">© 2008-2020 UniSender</div>
+                <div class="footer_copyright">© 2008-2021 UniSender</div>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- Cookies Popup Start -->
-<div id="leave-cookie" class="leaveCookiePopup">
-    <div class="leaveCookiePopup_content">
-        <p>Cookies не опасны — это всего лишь текстовые файлы с информацией о ваших предыдущих действиях на странице. К сожалению, без cookies наш сайт не сможет полноценно работать. Может, передумаете? Если нет — перенаправим на главную Google.</p>
-        <div class="wrap_btns">
-          <a href="https://www.google.com/" class="btn-link btn-popup">Перенаправить</a>
-          <button class="btn-agree btn-popup">Согласны с cookies</button>
-        </div>
-    </div>
-</div>
-<!-- Cookies Popup End -->
+
 
 <!-- Form submission to zapier +thanks +hello -->
 <script>
